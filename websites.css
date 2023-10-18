@@ -1,0 +1,98 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li, a, button {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    list-style: none;
+    text-decoration: none;
+    color: lime;
+}
+
+/* Style the background color */
+body {
+    background-color: black;
+}
+
+/* Style the navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+/* Style the play/pause button */
+#playPause {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Style the photo container */
+.photo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.photo {
+    position: relative;
+    margin: 10px;
+    border: 3px solid transparent;
+    animation: rotateColors 5s linear infinite;
+    cursor: pointer;
+}
+
+.photo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.photo p {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Set border colors based on specified colors */
+@keyframes rotateColors {
+    0% {
+        border-color: red;
+    }
+    14% {
+        border-color: orange;
+    }
+    28% {
+        border-color: yellow;
+    }
+    42% {
+        border-color: green;
+    }
+    57% {
+        border-color: blue;
+    }
+    71% {
+        border-color: indigo;
+    }
+    85% {
+        border-color: toky;
+    }
+    100% {
+        border-color: red;
+    }
+  }
+   

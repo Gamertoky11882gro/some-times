@@ -1,0 +1,135 @@
+/* Reset some default styles */
+.content h1 {
+    color: lime; /* Dark green color */
+}
+
+
+.content p {
+    font-size: 18px;
+    color: #ff0000; /* Set the desired color for the p element */
+}
+
+
+
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the background image container */
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place the background image behind the content */
+}
+
+.background-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Style the content section */
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 25px;
+}
+
+/* Style the navigation bar */
+nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    margin-right: 20px;
+}
+
+.logo img {
+    height: 40px; /* Set the desired height of the logo */
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+ul li {
+    margin-right: 20px;
+}
+
+ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: #9900ff; /* Set the desired color for the link when hovered */
+  }
+
+
+/* Rest of the styles remain unchanged */
+
+/* Style the writing animation */
+.writing-animation {
+    display: inline-block;
+    white-space: pre-wrap; /* Preserve line breaks and wrap text */
+    overflow: hidden;
+    animation: typing 5s steps(40) 1s forwards; /* Add 1s delay before starting */
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+/* Rest of the styles remain unchanged */
+
+/* Style the profile section */
+.profile-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.profile-picture {
+    margin: 20px;
+    width: 200px; /* Set the desired width for the profile picture */
+    height: 200px; /* Set the desired height for the profile picture */
+    border-radius: 50%; /* Makes the image circular */
+    overflow: hidden;
+    border: 3px solid white; /* Add a white border around the circle */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-text {
+    margin: 20px;
+    max-width: 600px; /* Set the desired maximum width for the text */
+ }

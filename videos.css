@@ -1,0 +1,61 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the background color */
+.background-color {
+    background-color: #000000; /* Light gray background color */
+}
+
+
+
+/* Style the videos container */
+.videos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0;
+    padding: 0px;
+}
+
+.video-text {
+    width: 560px; /* Set the desired width for the text box */
+    height: 550px; /* Set the desired height for the text box */
+    padding: 15px;
+    background-color: gold;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.video-text h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: magenta;
+}
+
+.video-text p {
+    font-size: 20px;
+    color: blue;
+  }
+
+/* Rest of the styles remain unchanged */
+
+/* Style individual video blocks */
+.video {
+    width: calc(50% - 20px);
+    margin-bottom: 40px;
+    position: relative; /* Add relative positioning for the border */
+    overflow: hidden; /* Hide overflowing border */
+}
+
+.video iframe {
+    width: 1120px;
+    height: 315px;
+    max-width: 100%;
+}
